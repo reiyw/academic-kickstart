@@ -39,7 +39,7 @@ def slack(line):
 
 Note that `'<Incoming Webhooks URL>'` should be replaced with yours.
 
-The following shows usage. By writing `%slack [message]` at the end of the cell, you can receive notification when it is finished.
+The following shows usage. By writing `%slack [message]` at the end of the cell, you can receive notification when it has finished.
 
 | Jupyter |   | Slack |
 |---------|---|-------|
