@@ -23,7 +23,7 @@ weight = 5
   year = 2018
 
 [[education.courses]]
-  course = "Banchelor of Engineering"
+  course = "Bachelor of Engineering"
   institution = "Tohoku University"
   year = 2016
  
