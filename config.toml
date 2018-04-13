@@ -149,14 +149,14 @@ defaultContentLanguageInSubdir = false
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = ["rust", "javascript", "python", "1c", "cpp", "scala", "bash"]
-  highlight_style = "monokai"
+  highlight_style = ""
 
   # Enable native social sharing buttons?
   sharing = true
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["style.css"]
+  custom_css = ["highlight.min.css"]
   custom_js  = []
 
   # Publication types.
