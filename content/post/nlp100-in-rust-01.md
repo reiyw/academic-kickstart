@@ -13,7 +13,7 @@ image = ""
 caption = ""
 +++
 
-[言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100/) を勉強を兼ねて Rust で解き始めたので，記録としてここにも残していきます．解説とかは気が向いたら追記していきます．
+[言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100/)を勉強を兼ねて Rust で解き始めたので，記録としてここにも残していきます．解説とかは気が向いたら追記していきます．
 
 ```rust
 extern crate rand;
