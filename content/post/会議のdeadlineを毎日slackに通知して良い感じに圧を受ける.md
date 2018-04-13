@@ -27,9 +27,9 @@ GAS はとても強力で，例えば以下のような機能を備えていま�
 
 これらの機能を使えば，毎日 Slack で通知を受け取るような bot は GAS 単体で簡単に書けます．この投稿ではその実装を簡単に紹介します．
 
-## 実装
+# 実装
 
-### Google Sheets の値を読み取る
+## Google Sheets の値を読み取る
 
 ```js
 function getConferenceInfo() {
@@ -59,7 +59,7 @@ function getConferenceInfo() {
 
 で終わりです．匿名関数を書くのに `function` を使ってたり，変数宣言で `var` を使ってたりしますが，これは GAS が ES6 に対応していないためです．
 
-### Slack Incoming Webhooks にリクエストを投げる
+## Slack Incoming Webhooks にリクエストを投げる
 
 ```js
 function sendDeadlineInfo(attachments) {
@@ -79,7 +79,7 @@ function sendDeadlineInfo(attachments) {
 
 [Slack の attachment](https://api.slack.com/docs/message-attachments) への加工は省略します．
 
-### 毎日定時刻に関数を実行する
+## 毎日定時刻に関数を実行する
 
 これも非常に便利で，特定の条件（イベント）を満たしたときに指定した関数を実行するように設定することができます．イベントを発火するトリガーは「時間」と「日付」の2種類あって，「時間」の場合，分・時間・日・週・月毎にトリガーを設定できます．今回の場合は毎日日付が変わったころに圧を感じたいので，次の画像のように設定しました．
 
@@ -87,7 +87,7 @@ function sendDeadlineInfo(attachments) {
 
 Run に指定した `main` 関数では会議の情報を加工して `sendDeadlineInfo` を叩きにいきます．
 
-## 結果
+# 結果
 
 こんな感じのができました．
 
