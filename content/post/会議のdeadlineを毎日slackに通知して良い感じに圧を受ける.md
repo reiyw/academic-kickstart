@@ -15,7 +15,7 @@ caption = ""
 
 弊研究室では論文を投稿する会議のリストを Google Sheets を使ってこんな感じで管理してます．
 
-![](/img/gss-conference-list.png)
+![Google Sheets conference list](/img/gss-conference-list.png)
 
 この中の「締切まで何日 (Days left)」の項目は怠惰な僕にとって非常に重要なわけですが，Google Sheets は重いし，このページを毎日見に行こうとは思いません．そこでこれらの項目を毎日 Slack で自動的に通知してくれたら，いい感じに締切への圧がかかって研究が進むというものです．そのような機能を実現する bot を [Google Apps Script (GAS)](https://developers.google.com/apps-script/) を使って実装してみました．
 
@@ -83,7 +83,7 @@ function sendDeadlineInfo(attachments) {
 
 これも非常に便利で，特定の条件（イベント）を満たしたときに指定した関数を実行するように設定することができます．イベントを発火するトリガーは「時間」と「日付」の2種類あって，「時間」の場合，分・時間・日・週・月毎にトリガーを設定できます．今回の場合は毎日日付が変わったころに圧を感じたいので，次の画像のように設定しました．
 
-![](/img/gas-schedule.png)
+![GAS schedule](/img/gas-schedule.png)
 
 Run に指定した `main` 関数では会議の情報を加工して `sendDeadlineInfo` を叩きにいきます．
 
@@ -91,7 +91,7 @@ Run に指定した `main` 関数では会議の情報を加工して `sendDeadl
 
 こんな感じのができました．
 
-![](/img/slack-deadline.png)
+![Slack deadline](/img/slack-deadline.png)
 
 Incoming Webhooks のアイコンが :innocent: なのもあって，締切への死を感じさせる bot になってますね．
 

@@ -6,7 +6,7 @@ lastmod = 2018-04-10
 draft = false
 
 tags = ["rust", "100本ノック"]
-summary = "[言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100/) を勉強を兼ねて Rust で解き始めたので，記録としてここにも残していきます．"
+summary = "[言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100/)を勉強を兼ねて Rust で解き始めたので，記録としてここにも残していきます．"
 
 [header]
 image = ""
