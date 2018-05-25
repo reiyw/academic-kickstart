@@ -3,7 +3,7 @@ title = "Interpretable and Compositional Relation Learning by Joint Training wit
 date = "2018-05-25"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["**Ryo Takahashi**$^{\\ast}$", "Ran Tian$^{\\ast}$", "Kentaro Inui"]
+authors = ["**Ryo Takahashi**", "Ran Tian", "Kentaro Inui"]
 
 # Publication type.
 # Legend:
@@ -61,4 +61,4 @@ caption = ""
 
 +++
 
-${}^{\ast}$ equal contribution
+Equal contribution from first two authors.
