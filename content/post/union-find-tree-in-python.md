@@ -2,7 +2,7 @@
 title = "細かすぎる Union-Find 木の Python 実装"
 
 date = 2018-06-05
-lastmod = 2018-06-05
+lastmod = 2018-06-08
 draft = false
 
 tags = ["python", "競技プログラミング"]
@@ -22,7 +22,7 @@ import operator
 
 
 class UnionFind:
-    def __init__(self):
+    def __init__(self, elems=None):
         class KeyDict(dict):
             def __missing__(self, key):
                 self[key] = key
@@ -30,6 +30,10 @@ class UnionFind:
 
         self.parent = KeyDict()
         self.rank = collections.defaultdict(int)
+
+        if elems is not None:
+            for elem in elems:
+                _, _ = self.parent[elem], self.rank[elem]
 
     def find(self, x):
         if self.parent[x] == x:
@@ -52,10 +56,10 @@ class UnionFind:
         return self.find(x) == self.find(y)
 
     def grouper(self):
-        parent_getter = operator.itemgetter(1)
-        for _, group in itertools.groupby(
-                sorted(self.parent.items(), key=parent_getter), parent_getter):
-            yield [i for i, _ in group]
+        roots = [(x, self.find(x_par)) for x, x_par in self.parent.items()]
+        root = operator.itemgetter(1)
+        for _, group in itertools.groupby(sorted(roots, key=root), root):
+            yield [x for x, _ in group]
 ```
 
 # 使用例
