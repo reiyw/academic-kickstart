@@ -2,7 +2,6 @@
 # About/Biography widget.
 widget = "about"
 active = true
-#date = "2018-04-02T17:00:00"
 date = "2018-04-02T08:00:00"
 
 # Order that this section will appear in.
@@ -26,7 +25,7 @@ weight = 5
   course = "Bachelor of Engineering"
   institution = "Tohoku University"
   year = 2016
- 
+
 +++
 
 # Biography
