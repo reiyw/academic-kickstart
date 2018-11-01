@@ -1,159 +1,67 @@
 +++
-title = "Slides"
+title = "つくってあそぼ（個人ページ）"
 
 [slides]
 # Choose a theme from https://github.com/hakimel/reveal.js#theming
-theme = "black"
+theme = "white"
 +++
 
-# Welcome to Slides
+## つくってあそぼ（個人ページ）
 
-[Academic](https://sourcethemes.com/academic/)
-
----
-
-## Features
-
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
+[Ryo Takahashi](../..)
 
 ---
 
-## Controls
-
-- Next: `Right Arrow` or `Space`
-- Previous: `Left Arrow`
-- Start: `Home`
-- Finish: `End`
-- Overview: `Esc`
-- Speaker notes: `S`
-- Fullscreen: `F`
-- Zoom: `Alt + Click`
-- [PDF Export](https://github.com/hakimel/reveal.js#pdf-export): `E`
+![](https://i.gyazo.com/cd244a5e09dc27bbff4fe735a05537f6.png)
 
 ---
 
-## Code Highlighting
+## [Hugo](https://gohugo.io/)
 
-Inline code: `variable`
-
-Code block:
-```python
-porridge = "blueberry"
-if porridge == "blueberry":
-    print("Eating...")
-```
+- Go 製の静的サイトジェネレータ
+- [テーマが豊富](https://themes.gohugo.io/)で，自分で細かいカスタマイズをしたくない人にオススメ
+- 特に [Academic theme](https://sourcethemes.com/academic/) が我々向け
 
 ---
 
-## Math
+## [Academic theme](https://sourcethemes.com/academic/)
 
-In-line math: $x + y = z$
-
-Block math:
-
-$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$
+![](https://d33wubrfki0l68.cloudfront.net/0636add41936432028414ca2997ba6f78f702711/995b6/academic/screenshot-academic_hud7608c6490536ac8ab050755ccd1fa70_104518_1500x1000_fill_catmullrom_top_2.png)
 
 ---
 
-## Fragments
+### レスポンシブ
 
-Make content appear incrementally
-
-```
-{{%/* fragment */%}} One {{%/* /fragment */%}}
-{{%/* fragment */%}} **Two** {{%/* /fragment */%}}
-{{%/* fragment */%}} Three {{%/* /fragment */%}}
-```
-
-Press `Space` to play!
-
-{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
+![](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)
 
 ---
 
-A fragment can accept two optional parameters:
+### これ必要だよねって機能は揃ってる
 
-- `class`: use a custom style (requires definition in custom CSS)
-- `weight`: sets the order in which a fragment appears
-
----
-
-## Speaker Notes
-
-Add speaker notes to your presentation
-
-```markdown
-{{%/* speaker_note */%}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{%/* /speaker_note */%}}
-```
-
-Press the `S` key to view the speaker notes!
-
-{{< speaker_note >}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{< /speaker_note >}}
+![](https://i.gyazo.com/e318b3229127c1b63b956453b3d15615.png)
 
 ---
 
-## Themes
+## [Netlify](https://www.netlify.com/)
 
-- black: Black background, white text, blue links (default)
-- white: White background, black text, blue links
-- league: Gray background, white text, blue links
-- beige: Beige background, dark text, brown links
-- sky: Blue background, thin dark text, blue links
-
----
-
-- night: Black background, thick white text, orange links
-- serif: Cappuccino background, gray text, brown links
-- simple: White background, black text, blue links
-- solarized: Cream-colored background, dark green text, blue links
+- 静的サイトのホスティングサービス
+- デプロイ，CI，HTTPS 等いろいろ面倒みてくれる
+- [Academic theme が Netlify へデプロイする手順を用意してる](https://github.com/gcushen/hugo-academic#quick-install-using-your-web-browser)ので，手順に従うだけで**何も考えずに**個人ページを公開できる
+- 標準では URL が `アプリ名.netlify.com` なので独自ドメインを買った
 
 ---
 
-{{< slide background-image="/img/boards.jpg" >}}
+## 独自ドメイン
 
-## Custom Slide
-
-Customize the slide style and background
-
-```markdown
-{{</* slide background-image="/img/boards.jpg" */>}}
-{{</* slide background-color="#0000FF" */>}}
-{{</* slide class="my-style" */>}}
-```
+![](https://i.gyazo.com/ebe2b2c6d32ba384c9f029d569051c72.png)
 
 ---
 
-## Custom CSS Example
-
-Let's make headers navy colored.
-
-Create `assets/css/reveal_custom.css` with:
-
-```css
-.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-```
+- [Google Domains](https://domains.google/) で買った
+- [お名前.com](https://www.onamae.com/) の方が安かった
+- 更新時に値段上がるらしい（？）
+- Netlify のダッシュボードで設定したらすぐ使えるようになった
 
 ---
 
-# Questions?
-
-[Ask](https://discourse.gohugo.io)
-
-[Documentation](https://sourcethemes.com/academic/docs/)
+![](https://pbs.twimg.com/media/BGkQhoCCUAE_eqI.jpg)
