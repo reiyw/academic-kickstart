@@ -1,5 +1,5 @@
 +++
-title = "つくってあそぼ（個人ページ）"
+title = "Effective Modern Python 2018"
 
 [slides]
 # Choose a theme from https://github.com/hakimel/reveal.js#theming
